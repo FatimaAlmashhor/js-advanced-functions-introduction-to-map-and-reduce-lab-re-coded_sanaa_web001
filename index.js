@@ -58,7 +58,7 @@ reduceToAnyTrue(sourceArray)
 // }
  sourceArray = [ false, null, null, null]
 reduceToAnyTrue(sourceArray);
-// 
+//
 // function reduceToAnyTrue(sourceArray) {
 //     console.log(sourceArray.reduce((sum  , current ) => { return current} , true));
 // }
