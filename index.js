@@ -31,7 +31,7 @@ reduceToTotal(sourceArray, startingPoint) ;
 
 function reduceToTotal (arr , init) {
   console.log(init);
-  if(init === '') {
+  if(init === undefine ) {
     return arr.reduce((sum , current) => {
       return sum+current ;
     } , 0)
