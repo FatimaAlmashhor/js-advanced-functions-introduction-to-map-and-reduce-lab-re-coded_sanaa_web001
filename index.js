@@ -40,7 +40,7 @@ reduceToTotal(sourceArray, startingPoint) ;
 
 
 function reduceToAnyTrue (arr) {
-    return arr.reduce((sum ,current) => (current ? true , false) , 1) ;
+    return arr.reduce((sum ,current) => (current ? true : false) , 1) ;
 }
 
 sourceArray = [1, 2, true, "razmatazz"]
