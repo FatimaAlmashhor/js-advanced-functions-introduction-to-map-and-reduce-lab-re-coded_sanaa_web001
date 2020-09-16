@@ -30,12 +30,12 @@ reduceToTotal(sourceArray) ;
 function reduceToTotal (arr , init) {
   console.log(init);
   if(init == undefined) {
-    console.log( arr.reduce((sum , current) => {
+    return arr.reduce((sum , current) => {
       return sum+current ;
-    } , 0));
+    } , 0);
   }
   else{
-    console.log( arr.reduce((sum , current) => {return sum+current} , init));
+    return arr.reduce((sum , current) => {return sum+current} , init);
 
   }
 }
