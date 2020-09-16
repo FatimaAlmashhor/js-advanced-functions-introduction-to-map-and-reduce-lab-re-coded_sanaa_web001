@@ -28,6 +28,7 @@ reduceToTotal(sourceArray) ;
 
 
 function reduceToTotal (arr , init) {
+  console.log(init);
   if(init === null) {
     return arr.reduce((sum , current) => {
       return sum+current ;
