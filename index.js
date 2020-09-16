@@ -29,7 +29,7 @@ reduceToTotal(sourceArray) ;
 
 function reduceToTotal (arr , init) {
   return arr.reduce((sum , current) => {return sum+current} , init)
-} 
+}
 
 
 function reduceToTotal (arr) {
