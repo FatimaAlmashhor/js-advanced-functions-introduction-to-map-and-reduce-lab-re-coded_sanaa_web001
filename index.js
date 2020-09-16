@@ -51,17 +51,17 @@ function reduceToAnyTrue (arr) {
     return arr.reduce((sum ,current) => current) ;
 }
 // sourceArray = [ false, null, null, null]
-// reduceToAnyTrue(sourceArray)
+reduceToAnyTrue(sourceArray)
 
-// function reduceToAnyTrue(sourceArray) {
-//     console.log(sourceArray.reduce((sum  , current ) => { return sum} , false));
-// }
+function reduceToAnyTrue(sourceArray) {
+    console.log(sourceArray.reduce((sum  , current ) => { return sum} , false));
+}
  sourceArray = [ false, null, null, null]
 reduceToAnyTrue(sourceArray);
-//
-// function reduceToAnyTrue(sourceArray) {
-//     console.log(sourceArray.reduce((sum  , current ) => { return current} , true));
-// }
+
+function reduceToAnyTrue(sourceArray) {
+    console.log(sourceArray.reduce((sum  , current ) => { return current} , true));
+}
 
 sourceArray = [ false, null, null, null, true]
 reduceToAnyTrue(sourceArray);
