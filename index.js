@@ -22,13 +22,16 @@ function mapToSquare (arr) {
 
 mapToSquare([1, 2, 3, -9]) ;
 
+let sourceArray = [1,2,3];
+reduceToTotal(sourceArray) ;
+
+
 function reduceToTotal (arr) {
   return arr.reduce((sum , current) => {
     return sum+current ;
   } , 0)
 }
-let sourceArray = [1,2,3];
-reduceToTotal(sourceArray) ;
+
 
 
 function reduceToTotal (arr , init) {
