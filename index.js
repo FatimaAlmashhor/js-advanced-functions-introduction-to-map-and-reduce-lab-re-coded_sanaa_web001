@@ -26,12 +26,10 @@ let sourceArray = [1,2,3];
 reduceToTotal(sourceArray) ;
 
 
-let startingPoint = 100
-reduceToTotal(sourceArray, startingPoint) ;
 
 function reduceToTotal (arr , init) {
   console.log(init);
-  if(init === undefine ) {
+  if(init === null) {
     return arr.reduce((sum , current) => {
       return sum+current ;
     } , 0)
@@ -41,6 +39,8 @@ function reduceToTotal (arr , init) {
 
 
 
+let startingPoint = 100
+reduceToTotal(sourceArray, startingPoint) ;
 
 
 
