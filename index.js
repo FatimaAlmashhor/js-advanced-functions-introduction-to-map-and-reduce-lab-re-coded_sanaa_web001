@@ -52,3 +52,23 @@ function reduceToAnyTrue (arr) {
 }
 sourceArray = [ false, null, null, null]
 reduceToAnyTrue(sourceArray)
+
+function reduceToAnyTrue(sourceArray) {
+    console.log(sourceArray.reduce((sum  , current ) => { return sum} , false));
+}
+
+let sourceArray = [ false, null, null, null]
+reduceToAnyTrue(sourceArray);
+
+function reduceToAnyTrue(sourceArray) {
+    console.log(sourceArray.reduce((sum  , current ) => { return current} , true));
+}
+
+sourceArray = [ false, null, null, null, true]
+reduceToAnyTrue(sourceArray);
+
+function reduceToAnyTrue(sourceArray) {
+    console.log(sourceArray.reduce((sum  , current ) => { return current ? true : false} , true));
+}
+sourceArray = [1, 2, true, "razmatazz"]
+reduceToAnyTrue(sourceArray)
