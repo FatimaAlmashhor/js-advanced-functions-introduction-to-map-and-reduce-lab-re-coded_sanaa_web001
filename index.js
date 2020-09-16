@@ -29,14 +29,16 @@ reduceToTotal(sourceArray) ;
 
 function reduceToTotal (arr , init) {
   console.log(init);
-  if(init === null) {
-    return arr.reduce((sum , current) => {
+  if(init == undefined) {
+    console.log( arr.reduce((sum , current) => {
       return sum+current ;
-    } , 0)
+    } , 0));
   }
-  return arr.reduce((sum , current) => {return sum+current} , init)
-}
+  else{
+    console.log( arr.reduce((sum , current) => {return sum+current} , init));
 
+  }
+}
 
 
 let startingPoint = 100
