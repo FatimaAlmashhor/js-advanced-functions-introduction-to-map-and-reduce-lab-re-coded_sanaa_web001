@@ -28,14 +28,12 @@ reduceToTotal(sourceArray) ;
 
 
 function reduceToTotal (arr , init) {
+  if(init === null) {
+    return arr.reduce((sum , current) => {
+      return sum+current ;
+    } , 0)
+  }
   return arr.reduce((sum , current) => {return sum+current} , init)
-}
-
-
-function reduceToTotal (arr) {
-  return arr.reduce((sum , current) => {
-    return sum+current ;
-  } , 0)
 }
 
 
