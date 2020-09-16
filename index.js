@@ -56,8 +56,7 @@ reduceToAnyTrue(sourceArray)
 function reduceToAnyTrue(sourceArray) {
     console.log(sourceArray.reduce((sum  , current ) => { return sum} , false));
 }
-
-let sourceArray = [ false, null, null, null]
+ sourceArray = [ false, null, null, null]
 reduceToAnyTrue(sourceArray);
 
 function reduceToAnyTrue(sourceArray) {
