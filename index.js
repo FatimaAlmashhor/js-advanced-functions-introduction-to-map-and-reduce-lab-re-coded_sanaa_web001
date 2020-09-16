@@ -26,6 +26,12 @@ let sourceArray = [1,2,3];
 reduceToTotal(sourceArray) ;
 
 
+
+function reduceToTotal (arr , init) {
+  return arr.reduce((sum , current) => {return sum+current} , init)
+} 
+
+
 function reduceToTotal (arr) {
   return arr.reduce((sum , current) => {
     return sum+current ;
@@ -34,9 +40,6 @@ function reduceToTotal (arr) {
 
 
 
-function reduceToTotal (arr , init) {
-  return arr.reduce((sum , current) => {return sum+current} , init)
-}
 let startingPoint = 100
 reduceToTotal(sourceArray, startingPoint) ;
 
